@@ -14,10 +14,11 @@ this problem, if you want your program answers before the next millenium
 [To read more info about the project](https://github.com/oulhafiane/1337-42-fillit/blob/master/resources/fillit.en.pdf)
 
 ## Video
+[![1337-42-Fillit](https://github.com/oulhafiane/1337-42-fillit/blob/master/resources/youtube.png?raw=true)](https://youtu.be/LpdmOIt1mhw)
 
 ## Team
-zoulhafi(Zakariaa Oulhafiane) : https://github.com/oulhafiane  
-onahiz(Oussama Nahiz) : https://github.com/useit015
+Zakariaa Oulhafiane : https://github.com/oulhafiane  
+Oussama Nahiz : https://github.com/useit015
 
 ## Result
 ![100/100](https://github.com/oulhafiane/1337-42-fillit/blob/master/resources/result.png?raw=true)
