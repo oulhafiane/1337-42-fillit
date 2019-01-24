@@ -6,11 +6,13 @@
 /*   By: onahiz <onahiz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/24 04:03:22 by zoulhafi          #+#    #+#             */
-/*   Updated: 2018/10/30 21:20:55 by onahiz           ###   ########.fr       */
+/*   Updated: 2019/01/24 18:59:32 by zoulhafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
+#include "colors.h"
+#include <stdio.h>
 
 void					print_result(int **board, int max)
 {
@@ -24,11 +26,24 @@ void					print_result(int **board, int max)
 		while (++j < max)
 		{
 			if (board[i][j] == 0)
-				ft_putchar('.');
+				printf(YELLOW(" . "));
 			else
-				ft_putchar(board[i][j]);
+			{
+				if ((board[i][j] - 65) % 4 == 0)
+					printf(GREEN(" %c "), board[i][j]);
+				else if ((board[i][j] - 65) % 4 == 1)
+					printf(RED(" %c "), board[i][j]);
+				else if ((board[i][j] - 65) % 4 == 2)
+					printf(BLUE(" %c "), board[i][j]);
+				else if ((board[i][j] - 65) % 4 == 3)
+					printf(MAGENTA(" %c "), board[i][j]);
+				else if ((board[i][j] - 65) % 4 == 4)
+					printf(CYAN(" %c "), board[i][j]);
+				else
+					printf(YELLOW(" %c "), board[i][j]);
+			}
 		}
-		ft_putchar('\n');
+		printf("\n");
 	}
 }
 

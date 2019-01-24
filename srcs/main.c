@@ -6,11 +6,12 @@
 /*   By: onahiz <onahiz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 01:43:10 by onahiz            #+#    #+#             */
-/*   Updated: 2018/10/30 22:04:14 by zoulhafi         ###   ########.fr       */
+/*   Updated: 2019/01/24 18:58:01 by zoulhafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
+#include <stdio.h>
 
 static int		check_empty(int **board, int max, t_tlist *lst)
 {
@@ -48,6 +49,9 @@ static int		get_min_board(int ***board, t_tlist *lst, int start)
 	i = 0;
 	while ((r = print_tetrimino(*board, start, lst, i++)))
 	{
+		system("clear");
+		print_result(*board, start);
+		usleep(20000);
 		if (check_empty(*board, start, lst) == 0)
 		{
 			remove_block(*board, start, lst->alpha);
@@ -100,7 +104,7 @@ static void		print_block(int pcs[27])
 		free(board);
 		board = create_board(++start);
 	}
-	print_result(board, start);
+	//print_result(board, start);
 	free(board);
 }
 
