@@ -19,6 +19,3 @@ this problem, if you want your program answers before the next millenium
 ## Team
 Zakariaa Oulhafiane : https://github.com/oulhafiane  
 Oussama Nahiz : https://github.com/useit015
-
-## Result
-![100/100](https://github.com/oulhafiane/1337-42-fillit/blob/master/resources/result.png?raw=true)
